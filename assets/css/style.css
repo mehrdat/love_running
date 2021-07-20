@@ -55,3 +55,34 @@ border-bottom: 1px solid #3a3a3a;
     border-bottom: 1px solid #3a3a3a;
 
 }
+
+/* hero image*/
+#hero-image{
+    height: 600px;
+    width: 100%;
+    background-image: url(../image/hero-image.webp);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+    /*hero-image animation */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#hero-outer{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* moving sense for image*/
+@keyframes hero-zoom {
+    from{
+transform: scale(1);
+    }
+    to{
+transform: scale(1.1);
+    }
+    
+}
